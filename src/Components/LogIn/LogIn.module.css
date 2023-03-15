@@ -1,0 +1,121 @@
+.LoginBlock{
+    position: fixed;
+    top: -50em;
+    right: 0;
+    color: rgb(66, 28, 43, 255);
+    margin: 16px;
+    width: 350px;
+    height: auto;
+    background: rgb(255, 255, 255, .5);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 50%);
+    transition: all 0.3s ease-in-out;
+}
+
+.LoginBlock.active{
+    top: 0em;
+}
+
+.LoginBlock .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 16px 16px 16px;
+}
+
+.LoginBlock .form h3{
+    margin-top: 16px;
+}
+
+.LoginBlock span{
+    color: #ee9ca7;
+    cursor: pointer;
+}
+
+.input__container{
+    width: 100%;
+    margin-top: 16px;
+    font-size: 16px;
+}
+
+.loginBtn{
+    width: 100px;
+    height: 40px;
+    margin-top: 16px;
+}
+
+.loginInputs{
+    margin-top: 5px;
+    padding-left: 10px;
+    width: calc(100% - 10px);
+    height: 36px;
+}
+
+/* HERE
+
+
+
+input, textarea, select{
+    font-size: 18px;
+    margin-top: 5px;
+    padding-left: 10px;
+    width: calc(100% - 10px);
+    height: 36px;
+    background: transparent;
+    border-radius: 5px;
+    border: solid 2px #ee9ca7;
+    color: #ee9ca7;
+    transition: all .3s ease-in-out;
+}
+
+input:hover, textarea:hover, select:hover, input:focus, textarea:focus, select:focus{
+    border-color: #ee9ca7;
+    color: #ee9ca7;
+    outline: none;
+
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: transparent;
+    margin-top: 16px;
+    background: #f7bec5;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: border-color .3s ease-in-out, background .1s ease-in-out;
+}
+
+button:hover{
+    border-color: #ee9ca7;
+}
+
+button:active{
+    background: #ee9ca7;
+}
+*/
+
+.loginText{
+    margin-top: 16px;
+}
+
+.userPhotoContainer{
+    width: 150px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.userPhotoContainer img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+    transition: 0.3s all ease-in-out;
+}

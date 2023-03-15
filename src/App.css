@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.AppWrapper{
+  width: 50vw;
+  height: auto;
+  background: rgb(255, 255, 255, .5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  color: rgb(66, 28, 43, 255);
+
+}
+
+.ContentSect{
+  padding: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .AppWrapper{
+    width: 100vw;
+  }
+} 

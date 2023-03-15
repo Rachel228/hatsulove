@@ -1,0 +1,81 @@
+.dialogWrapper{
+    display: grid;
+    width: 100%;
+    height: 78vh;
+    grid-template-rows: 1fr 50px;
+}
+
+.messagesContainer{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    /*display: grid;*/
+}
+
+/* .messagesContainer{
+    width: 100%;
+    overflow-y: scroll;
+    background: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+} */
+
+.sendMessageWrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    align-items: center;
+    justify-items: center;
+    z-index: 3;
+    -webkit-box-shadow: 0px -10px 10px -10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px -10px 10px -10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px -10px 10px -10px rgba(0, 0, 0, 0.4);
+    grid-gap: 16px;
+}
+.sendMessageBtn{
+    padding: 10px;
+    color: rgb(66, 28, 43);
+    margin-right: 16px;
+    margin-top: 15px;
+    font-weight: 550;
+}
+.sendMessageArea{
+    width: 90%;
+    height: 24px;
+    padding: 6px;
+    color: rgb(66, 28, 43);
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.etireWidth{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.message{
+    max-width: 45%;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+
+.message.left{
+    background: #421C2B;
+    align-self: flex-start;
+    margin-left: 6px;
+    border-radius: 0px 8px 8px 8px;
+    color: white;
+}
+
+.message.right{
+    align-self: flex-end;
+    background: #F7BEC5;
+    margin-right: 6px;
+    border-radius: 8px 0px 8px 8px;
+    font-weight: 550;
+}
+

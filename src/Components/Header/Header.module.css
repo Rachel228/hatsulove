@@ -1,0 +1,114 @@
+header{
+    width: calc(50vw - 20px);
+    /* background: #e0cfb1; */
+    color:  #421c2b;
+    /* background: #421c2b; */
+    background: rgb(255, 255, 255, .8);
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: transparent;
+    background: #ffdde1;
+    transition: border-color .3s ease-in-out, background .1s ease-in-out;
+    color: rgb(66, 28, 43, 255);
+    margin-top: 0px;
+}
+
+button:hover{
+    border-color: #ee9ca7;
+}
+
+button:active{
+    background: #ee9ca7;
+}
+
+.logo{
+    max-width: 130px;
+    height: auto;
+}
+
+.headerImageContainer{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    align-items: center;
+}
+.headerImageContainer img{
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.headerImageContainer img:hover{
+    box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+}
+
+.popUp{
+    box-shadow: 0 0 10px rgb(0, 0, 0, .5);
+    background: rgb(255, 255, 255, .5);
+    width: 160px;
+    padding: 6px;
+    height: 60px;
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(2, 1fr);
+    pointer-events: none;
+    text-align: center;
+    left: -2em;
+    opacity: 0;
+    position: absolute;
+    transition: 0.3s all ease-in-out;
+    border-radius: 0 10px 10px 0;
+}
+
+.popUp.active{
+    left: 5em;
+    pointer-events: all;
+    opacity: 1;
+}
+
+.popUp h4 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.profileBtn{
+    transition: .3s all ease-in-out;
+    background: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.profileBtn.top{
+    border-radius: 0 10px 0 0;
+}
+
+.profileBtn.bot{
+    border-radius: 0 0 10px  0;
+}
+
+.profileBtn:hover{
+    background: #ee9ca7;
+}
+
+@media screen and (max-width: 800px) {
+    header{
+        width: calc(100vw - 20px);
+    }
+} 
